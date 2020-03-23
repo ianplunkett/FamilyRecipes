@@ -78,6 +78,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A1319012428541E00C7133D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A1319022428542E00C7133D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A36400324284FC900705673 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A1319032428543D00C7133D /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		1A363FF024284FC900705673 = {
 			isa = PBXGroup;
 			children = (
@@ -101,9 +123,11 @@
 		1A363FFB24284FC900705673 /* FamilyRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				1A1319032428543D00C7133D /* View Models */,
+				1A1319022428542E00C7133D /* Views */,
+				1A1319012428541E00C7133D /* Models */,
 				1A363FFC24284FC900705673 /* AppDelegate.swift */,
 				1A363FFE24284FC900705673 /* SceneDelegate.swift */,
-				1A36400324284FC900705673 /* ContentView.swift */,
 				1A36400524284FCC00705673 /* Assets.xcassets */,
 				1A36400A24284FCC00705673 /* LaunchScreen.storyboard */,
 				1A36400D24284FCC00705673 /* Info.plist */,
@@ -440,7 +464,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FamilyRecipes/Preview Content\"";
-				DEVELOPMENT_TEAM = 55ZJ2R97XV;
+				DEVELOPMENT_TEAM = A77U9SBNYH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FamilyRecipes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -460,7 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FamilyRecipes/Preview Content\"";
-				DEVELOPMENT_TEAM = 55ZJ2R97XV;
+				DEVELOPMENT_TEAM = A77U9SBNYH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FamilyRecipes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
