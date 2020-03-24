@@ -14,7 +14,8 @@ struct RecipeView: View {
 
     var body: some View {
         VStack {
-            Text(recipe.name)
+            IngredientListView(ingredients: recipe.ingredients)
+            DirectionListView(directions: recipe.directions)
         }.navigationBarTitle(recipe.name)
     }
 }

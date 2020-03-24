@@ -18,3 +18,26 @@ class RecipesListViewModel: ObservableObject {
     }
 }
 
+class RecipeViewModel {
+    let id = UUID()
+
+    var recipe: Recipe
+
+    init(recipe: Recipe) {
+        self.recipe = recipe
+    }
+
+    var name: String {
+        return self.recipe.name
+    }
+
+    var directions: [DirectionViewModel] {
+        let directions: [Direction] = self.recipe.directions
+        return directions.map(DirectionViewModel.init)
+    }
+
+    var ingredients: [IngredientViewModel] {
+        let ingredients: [IngredientMeasurement] = self.recipe.ingredients
+        return ingredients.map(IngredientViewModel.init)
+    }
+}
