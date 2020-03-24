@@ -9,15 +9,18 @@
 import SwiftUI
 
 struct RecipeView: View {
+
+    let recipe: RecipeViewModel
+
     var body: some View {
         VStack {
-            Text("Recipe Title")
-        }
+            Text(recipe.name)
+        }.navigationBarTitle(recipe.name)
     }
 }
 
 struct RecipeView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeView()
+        RecipeView(recipe: RecipeViewModel(recipe: Recipe.all()[0]))
     }
 }
