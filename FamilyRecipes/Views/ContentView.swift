@@ -9,8 +9,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject private var recipeListVM = RecipesListViewModel()
+    
     var body: some View {
-        Text("Hello, World!")
+        RecipeListView(recipes: self.recipeListVM.recipes)
     }
 }
 
