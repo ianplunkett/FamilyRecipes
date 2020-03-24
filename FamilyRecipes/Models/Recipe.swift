@@ -8,6 +8,7 @@
 
 import Foundation
 
+//TODO: Add a servings per recipe
 struct Recipe: Identifiable {
     let id: UUID
     let name: String
@@ -17,6 +18,7 @@ struct Recipe: Identifiable {
 
 extension Recipe {
     static func all() -> [Recipe] {
+        //TODO: move this data to a JSON Object
         return [
             Recipe(id: UUID(), name: "Spaghetti", ingredients:
                 [IngredientMeasurement(id: UUID(), unit: Unit.DryVolume(.cup), ingredient: Ingredient(id: UUID(), name: "Pasta", description: "Spaghetti Pasta"), amount: 1)], directions: [Direction(id: UUID(), step: 1, description: "Boiling Pasta for 5 minutes or until done")

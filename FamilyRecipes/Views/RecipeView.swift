@@ -14,6 +14,7 @@ struct RecipeView: View {
 
     var body: some View {
         VStack {
+            //TODO: add image view and clean this up
             IngredientListView(ingredients: recipe.ingredients)
             DirectionListView(directions: recipe.directions)
         }.navigationBarTitle(recipe.name)

@@ -9,7 +9,7 @@
 import Foundation
 
 class RecipesListViewModel: ObservableObject {
-    
+    //TODO: I don't think we need this here yet. No state changes
     @Published var recipes = [RecipeViewModel]()
     
     init() {
