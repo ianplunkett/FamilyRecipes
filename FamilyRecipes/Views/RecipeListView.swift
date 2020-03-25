@@ -20,13 +20,18 @@ struct RecipeListView: View {
         NavigationView {
             List {
                 ForEach(self.recipes, id: \.id) { recipe in
-                    //TODO: add a thumbnail image for each recipe
                     NavigationLink(destination: RecipeView(recipe: recipe)) {
-                        Text(recipe.name)
+                        HStack {
+                            Image(recipe.imageName)
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                                .cornerRadius(5)
+                            Text(recipe.name)
+                        }
                     }
                 }
             }
-            .navigationBarTitle(Text("Recipes"), displayMode: .large)
+            .navigationBarTitle(Text("Recipes"), displayMode: .inline)
                 //TODO: Add a Create Recipe View and link it here
             .navigationBarItems(trailing:
                 Button(action: showAddRecipeView) {

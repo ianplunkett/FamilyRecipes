@@ -21,6 +21,7 @@
 		1A36400C24284FCC00705673 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A36400A24284FCC00705673 /* LaunchScreen.storyboard */; };
 		1A36401724284FCD00705673 /* FamilyRecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A36401624284FCD00705673 /* FamilyRecipesTests.swift */; };
 		1A36402224284FCD00705673 /* FamilyRecipesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A36402124284FCD00705673 /* FamilyRecipesUITests.swift */; };
+		1A7FF7BD242AE52600532CB1 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FF7BC242AE52600532CB1 /* HeaderView.swift */; };
 		1AAE2962242874E100D696E8 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE2961242874E100D696E8 /* RecipeView.swift */; };
 		1AAE29642429345300D696E8 /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE29632429345300D696E8 /* RecipeListView.swift */; };
 		1AAE2967242942E000D696E8 /* RecipesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE2966242942E000D696E8 /* RecipesListViewModel.swift */; };
@@ -29,6 +30,8 @@
 		1AAE296F2429B1FC00D696E8 /* DirectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE296E2429B1FC00D696E8 /* DirectionViewModel.swift */; };
 		1AAE29752429C7FB00D696E8 /* IngredientListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE29742429C7FB00D696E8 /* IngredientListView.swift */; };
 		1AAE29772429CBDE00D696E8 /* IngredientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE29762429CBDE00D696E8 /* IngredientViewModel.swift */; };
+		1AAE297A242A798100D696E8 /* tomatoes_peppers.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1AAE2979242A798000D696E8 /* tomatoes_peppers.jpeg */; };
+		1AAE297E242A7AC500D696E8 /* grilled_chicken_and_peppers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1AAE297D242A7AC500D696E8 /* grilled_chicken_and_peppers.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,7 @@
 		1A36401D24284FCD00705673 /* FamilyRecipesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamilyRecipesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A36402124284FCD00705673 /* FamilyRecipesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyRecipesUITests.swift; sourceTree = "<group>"; };
 		1A36402324284FCD00705673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A7FF7BC242AE52600532CB1 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		1AAE2961242874E100D696E8 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		1AAE29632429345300D696E8 /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
 		1AAE2966242942E000D696E8 /* RecipesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListViewModel.swift; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 		1AAE296E2429B1FC00D696E8 /* DirectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionViewModel.swift; sourceTree = "<group>"; };
 		1AAE29742429C7FB00D696E8 /* IngredientListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientListView.swift; sourceTree = "<group>"; };
 		1AAE29762429CBDE00D696E8 /* IngredientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewModel.swift; sourceTree = "<group>"; };
+		1AAE2979242A798000D696E8 /* tomatoes_peppers.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tomatoes_peppers.jpeg; sourceTree = "<group>"; };
+		1AAE297D242A7AC500D696E8 /* grilled_chicken_and_peppers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grilled_chicken_and_peppers.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +131,7 @@
 				1AAE296A2429B0EE00D696E8 /* DirectionListView.swift */,
 				1AAE296C2429B10100D696E8 /* DirectionView.swift */,
 				1AAE29632429345300D696E8 /* RecipeListView.swift */,
+				1A7FF7BC242AE52600532CB1 /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,6 +176,7 @@
 		1A363FFB24284FC900705673 /* FamilyRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				1AAE2978242A789C00D696E8 /* Resources */,
 				1A13190C2428660700C7133D /* Playgrounds */,
 				1A1319032428543D00C7133D /* View Models */,
 				1A1319022428542E00C7133D /* Views */,
@@ -208,6 +216,15 @@
 				1A36402324284FCD00705673 /* Info.plist */,
 			);
 			path = FamilyRecipesUITests;
+			sourceTree = "<group>";
+		};
+		1AAE2978242A789C00D696E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1AAE2979242A798000D696E8 /* tomatoes_peppers.jpeg */,
+				1AAE297D242A7AC500D696E8 /* grilled_chicken_and_peppers.jpg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,7 +333,9 @@
 			files = (
 				1A36400C24284FCC00705673 /* LaunchScreen.storyboard in Resources */,
 				1A36400924284FCC00705673 /* Preview Assets.xcassets in Resources */,
+				1AAE297E242A7AC500D696E8 /* grilled_chicken_and_peppers.jpg in Resources */,
 				1A36400624284FCC00705673 /* Assets.xcassets in Resources */,
+				1AAE297A242A798100D696E8 /* tomatoes_peppers.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +370,7 @@
 				1A36400224284FC900705673 /* FamilyRecipes.xcdatamodeld in Sources */,
 				1AAE296B2429B0EE00D696E8 /* DirectionListView.swift in Sources */,
 				1AAE29642429345300D696E8 /* RecipeListView.swift in Sources */,
+				1A7FF7BD242AE52600532CB1 /* HeaderView.swift in Sources */,
 				1AAE2962242874E100D696E8 /* RecipeView.swift in Sources */,
 				1A1319072428562300C7133D /* Ingredient.swift in Sources */,
 				1A36400424284FC900705673 /* ContentView.swift in Sources */,

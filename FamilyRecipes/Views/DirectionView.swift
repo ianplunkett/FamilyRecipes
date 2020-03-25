@@ -13,8 +13,8 @@ struct DirectionView: View {
     let direction: DirectionViewModel
 
     var body: some View {
-        HStack {
-            Text(String(direction.step))
+        HStack(alignment: .top) {
+            Text("Step " + String(direction.step) + ".")
             Text(direction.description)
         }
     }

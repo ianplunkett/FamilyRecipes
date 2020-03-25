@@ -13,11 +13,13 @@ struct RecipeView: View {
     let recipe: RecipeViewModel
 
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             //TODO: add image view and clean this up
-            IngredientListView(ingredients: recipe.ingredients)
+            HeaderView(imageName: recipe.imageName, recipeName: recipe.name)
+            IngredientListView(ingredients: recipe.ingredients).padding(.bottom)
             DirectionListView(directions: recipe.directions)
-        }.navigationBarTitle(recipe.name)
+            Spacer()
+        }.frame(width: 300)
     }
 }
 

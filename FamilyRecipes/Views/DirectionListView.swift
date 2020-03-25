@@ -17,8 +17,8 @@ struct DirectionListView: View {
     }
 
     var body: some View {
-        VStack {
-            Text("Directions")
+        VStack(alignment: .leading) {
+            Text("Directions").font(.title)
             ForEach(self.directions, id: \.id) { direction in
                 DirectionView(direction: direction)
             }

@@ -13,8 +13,8 @@ struct IngredientListView: View {
     let ingredients: [IngredientViewModel]
 
     var body: some View {
-        VStack {
-            Text("Ingredients")
+        VStack(alignment: .leading) {
+            Text("Ingredients").font(.title)
             ForEach(self.ingredients, id: \.id) { ingredient in
                 HStack {
                     Text(String(ingredient.amount))
