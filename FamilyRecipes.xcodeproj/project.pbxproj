@@ -21,7 +21,7 @@
 		1A36400C24284FCC00705673 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A36400A24284FCC00705673 /* LaunchScreen.storyboard */; };
 		1A36401724284FCD00705673 /* FamilyRecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A36401624284FCD00705673 /* FamilyRecipesTests.swift */; };
 		1A36402224284FCD00705673 /* FamilyRecipesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A36402124284FCD00705673 /* FamilyRecipesUITests.swift */; };
-		1A7FF7BD242AE52600532CB1 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FF7BC242AE52600532CB1 /* HeaderView.swift */; };
+		1A5ACD54242B31A0007401FE /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FF7BC242AE52600532CB1 /* HeaderView.swift */; };
 		1AAE2962242874E100D696E8 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE2961242874E100D696E8 /* RecipeView.swift */; };
 		1AAE29642429345300D696E8 /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE29632429345300D696E8 /* RecipeListView.swift */; };
 		1AAE2967242942E000D696E8 /* RecipesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE2966242942E000D696E8 /* RecipesListViewModel.swift */; };
@@ -361,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AAE29772429CBDE00D696E8 /* IngredientViewModel.swift in Sources */,
+				1A5ACD54242B31A0007401FE /* HeaderView.swift in Sources */,
 				1AAE296F2429B1FC00D696E8 /* DirectionViewModel.swift in Sources */,
 				1AAE296D2429B10100D696E8 /* DirectionView.swift in Sources */,
 				1A1319092428584100C7133D /* Direction.swift in Sources */,
@@ -370,7 +371,6 @@
 				1A36400224284FC900705673 /* FamilyRecipes.xcdatamodeld in Sources */,
 				1AAE296B2429B0EE00D696E8 /* DirectionListView.swift in Sources */,
 				1AAE29642429345300D696E8 /* RecipeListView.swift in Sources */,
-				1A7FF7BD242AE52600532CB1 /* HeaderView.swift in Sources */,
 				1AAE2962242874E100D696E8 /* RecipeView.swift in Sources */,
 				1A1319072428562300C7133D /* Ingredient.swift in Sources */,
 				1A36400424284FC900705673 /* ContentView.swift in Sources */,
