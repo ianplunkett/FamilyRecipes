@@ -13,13 +13,20 @@ struct RecipeView: View {
     let recipe: RecipeViewModel
 
     var body: some View {
-        VStack(alignment: .leading) {
-            //TODO: add image view and clean this up
-            HeaderView(imageName: recipe.imageName, recipeName: recipe.name)
-            IngredientListView(ingredients: recipe.ingredients).padding(.bottom)
-            DirectionListView(directions: recipe.directions)
-            Spacer()
-        }.frame(width: 300)
+        ScrollView {
+            VStack(alignment: .leading) {
+                //TODO: add image view and clean this up
+                HeaderView(imageName: recipe.imageName, recipeName: recipe.name)
+                Text("Prep Time: " + recipe.prepTime)
+                    .fontWeight(.bold)
+                Text("Cook TIme: " + recipe.cookTime)
+                    .fontWeight(.bold)
+                    .padding(.bottom)
+                IngredientListView(ingredients: recipe.ingredients).padding(.bottom)
+                DirectionListView(directions: recipe.directions)
+                Spacer()
+            }.frame(width: 300)
+        }
     }
 }
 

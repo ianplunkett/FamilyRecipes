@@ -12,6 +12,8 @@ import Foundation
 struct Recipe: Identifiable {
     let id: UUID
     let name: String
+    let prepTime: String
+    let cookTime: String
     let ingredients: [IngredientMeasurement]
     let directions: [Direction]
     let imageName: String
@@ -25,16 +27,28 @@ extension Recipe {
             Recipe(
                 id: UUID(),
                 name: "Tomato and Pepper Salsa",
+                prepTime: "10 Minutes",
+                cookTime: "15 Minutes",
                 ingredients: [
                     IngredientMeasurement(id: UUID(), unit: Unit.DryVolume(.cup), ingredient: Ingredient(id: UUID(), name: "Tomatoes", description: "Roma Tomatoes"), amount: 1),
-                    IngredientMeasurement(id: UUID(), unit: Unit.DryVolume(.cup), ingredient: Ingredient(id: UUID(), name: "Thai Chilis", description: "Ripe Thai Chilis"), amount: 1)
+                    IngredientMeasurement(id: UUID(), unit: Unit.DryVolume(.cup), ingredient: Ingredient(id: UUID(), name: "Thai Chilis", description: "Ripe Thai Chilis"), amount: 1),
+                    IngredientMeasurement(id: UUID(), unit: Unit.DryVolume(.cup), ingredient: Ingredient(id: UUID(), name: "Yellow Onion", description: "Yellow Onion"), amount: 0.5),
+                    IngredientMeasurement(id: UUID(), unit: Unit.DryVolume(.cup), ingredient: Ingredient(id: UUID(), name: "Salt", description: "Kosher Salt"), amount: 0.5)
                 ],
-                directions: [Direction(id: UUID(), step: 1, description: "Chop tomatoes into quarter inch chunks")],
+                directions: [
+                    Direction(id: UUID(), step: 1, description: "Chop tomatoes into quarter inch chunks"),
+                    Direction(id: UUID(), step: 2, description: "Mince onion"),
+                    Direction(id: UUID(), step: 3, description: "Finely chop peppers"),
+                    Direction(id: UUID(), step: 4, description: "Combine in mixing bowl"),
+                    Direction(id: UUID(), step: 5, description: "Add salt to taste")
+                ],
                 imageName: "tomatoes_peppers"
             ),
             Recipe(
                 id: UUID(),
                 name: "Scrambled Eggs",
+                prepTime: "10 Minutes",
+                cookTime: "15 Minutes",
                 ingredients:[IngredientMeasurement(id: UUID(), unit: Unit.DryVolume(.cup), ingredient: Ingredient(id: UUID(), name: "Eggs", description: "Fresh Organic Eggs"), amount: 2)],
                 directions: [Direction(id: UUID(), step: 1, description: "Scramble Eggs and fry in a pan until done")],
                 imageName: "grilled_chicken_and_peppers"

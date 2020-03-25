@@ -25,7 +25,7 @@ struct HeaderView: View {
     }
 }
 
-struct HeaderView_Previews: PreviewProvider {
+struct HeaderImageView_Previews: PreviewProvider {
     static var previews: some View {
         HeaderView(imageName: "tomatoes_peppers", recipeName: "Tomato and Pepper Salsa")
     }

@@ -35,6 +35,14 @@ class RecipeViewModel {
         return self.recipe.imageName
     }
 
+    var prepTime: String {
+        return self.recipe.prepTime
+    }
+
+    var cookTime: String {
+        return self.recipe.cookTime
+    }
+
     var directions: [DirectionViewModel] {
         let directions: [Direction] = self.recipe.directions
         return directions.map(DirectionViewModel.init)
