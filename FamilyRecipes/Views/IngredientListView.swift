@@ -14,7 +14,7 @@ struct IngredientListView: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Ingredients").font(.title)
+            Text("Ingredients").font(.title).fontWeight(.bold)
             ForEach(self.ingredients, id: \.id) { ingredient in
                 HStack {
                     Text(String(ingredient.amount))

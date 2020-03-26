@@ -14,10 +14,10 @@ struct Recipe: Identifiable {
     let name: String
     let prepTime: String
     let cookTime: String
+    let servings: Int
     let ingredients: [IngredientMeasurement]
     let directions: [Direction]
     let imageName: String
-    //TODO: add prep time, cook time, total time
 }
 
 extension Recipe {
@@ -29,6 +29,7 @@ extension Recipe {
                 name: "Tomato and Pepper Salsa",
                 prepTime: "10 Minutes",
                 cookTime: "15 Minutes",
+                servings: 4,
                 ingredients: [
                     IngredientMeasurement(id: UUID(), unit: Unit.DryVolume(.cup), ingredient: Ingredient(id: UUID(), name: "Tomatoes", description: "Roma Tomatoes"), amount: 1),
                     IngredientMeasurement(id: UUID(), unit: Unit.DryVolume(.cup), ingredient: Ingredient(id: UUID(), name: "Thai Chilis", description: "Ripe Thai Chilis"), amount: 1),
@@ -49,6 +50,7 @@ extension Recipe {
                 name: "Scrambled Eggs",
                 prepTime: "10 Minutes",
                 cookTime: "15 Minutes",
+                servings: 1,
                 ingredients:[IngredientMeasurement(id: UUID(), unit: Unit.DryVolume(.cup), ingredient: Ingredient(id: UUID(), name: "Eggs", description: "Fresh Organic Eggs"), amount: 2)],
                 directions: [Direction(id: UUID(), step: 1, description: "Scramble Eggs and fry in a pan until done")],
                 imageName: "grilled_chicken_and_peppers"

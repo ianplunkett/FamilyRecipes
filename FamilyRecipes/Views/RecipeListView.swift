@@ -31,7 +31,7 @@ struct RecipeListView: View {
                     }
                 }
             }
-            .navigationBarTitle(Text("Recipes"), displayMode: .inline)
+            .navigationBarTitle(Text("Recipes"), displayMode: .large)
                 //TODO: Add a Create Recipe View and link it here
             .navigationBarItems(trailing:
                 Button(action: showAddRecipeView) {

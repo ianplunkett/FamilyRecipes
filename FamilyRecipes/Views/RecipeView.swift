@@ -15,18 +15,19 @@ struct RecipeView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                //TODO: add image view and clean this up
                 HeaderView(imageName: recipe.imageName, recipeName: recipe.name)
-                Text("Prep Time: " + recipe.prepTime)
+                Text(recipe.prepTime)
                     .fontWeight(.bold)
-                Text("Cook TIme: " + recipe.cookTime)
+                Text(recipe.cookTime)
                     .fontWeight(.bold)
+                Text(recipe.servings)
+                    .fontWeight(.semibold)
                     .padding(.bottom)
                 IngredientListView(ingredients: recipe.ingredients).padding(.bottom)
                 DirectionListView(directions: recipe.directions)
                 Spacer()
             }.frame(width: 300)
-        }
+        }.navigationBarTitle(Text(recipe.name), displayMode: .inline)
     }
 }
 

@@ -36,13 +36,16 @@ class RecipeViewModel {
     }
 
     var prepTime: String {
-        return self.recipe.prepTime
+        return "Prep Time: " + self.recipe.prepTime
     }
 
     var cookTime: String {
-        return self.recipe.cookTime
+        return "Cook TIme: " + self.recipe.cookTime
     }
 
+    var servings: String {
+        return String(self.recipe.servings) + " servings"
+    }
     var directions: [DirectionViewModel] {
         let directions: [Direction] = self.recipe.directions
         return directions.map(DirectionViewModel.init)

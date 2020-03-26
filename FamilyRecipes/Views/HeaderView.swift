@@ -14,14 +14,11 @@ struct HeaderView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(recipeName)
-                .font(.largeTitle)
-                .fixedSize(horizontal: false, vertical: true)
             Image(imageName)
                 .resizable()
                 .frame(width: 300, height: 200)
                 .cornerRadius(7)
-        }
+        }.padding(.top)
     }
 }
 
