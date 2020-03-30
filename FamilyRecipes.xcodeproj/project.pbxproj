@@ -22,6 +22,7 @@
 		1A36401724284FCD00705673 /* FamilyRecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A36401624284FCD00705673 /* FamilyRecipesTests.swift */; };
 		1A36402224284FCD00705673 /* FamilyRecipesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A36402124284FCD00705673 /* FamilyRecipesUITests.swift */; };
 		1A5ACD54242B31A0007401FE /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FF7BC242AE52600532CB1 /* HeaderView.swift */; };
+		1A5ACD9124316B4C007401FE /* Recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A5ACD9024316B4C007401FE /* Recipes.json */; };
 		1AAE2962242874E100D696E8 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE2961242874E100D696E8 /* RecipeView.swift */; };
 		1AAE29642429345300D696E8 /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE29632429345300D696E8 /* RecipeListView.swift */; };
 		1AAE2967242942E000D696E8 /* RecipesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE2966242942E000D696E8 /* RecipesListViewModel.swift */; };
@@ -32,6 +33,7 @@
 		1AAE29772429CBDE00D696E8 /* IngredientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE29762429CBDE00D696E8 /* IngredientViewModel.swift */; };
 		1AAE297A242A798100D696E8 /* tomatoes_peppers.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1AAE2979242A798000D696E8 /* tomatoes_peppers.jpeg */; };
 		1AAE297E242A7AC500D696E8 /* grilled_chicken_and_peppers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1AAE297D242A7AC500D696E8 /* grilled_chicken_and_peppers.jpg */; };
+		1ADF95882432520600FA8ECD /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF95872432520600FA8ECD /* FileService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,7 @@
 		1A36401D24284FCD00705673 /* FamilyRecipesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamilyRecipesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A36402124284FCD00705673 /* FamilyRecipesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyRecipesUITests.swift; sourceTree = "<group>"; };
 		1A36402324284FCD00705673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A5ACD9024316B4C007401FE /* Recipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Recipes.json; sourceTree = "<group>"; };
 		1A7FF7BC242AE52600532CB1 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		1AAE2961242874E100D696E8 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		1AAE29632429345300D696E8 /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
@@ -83,6 +86,7 @@
 		1AAE29762429CBDE00D696E8 /* IngredientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewModel.swift; sourceTree = "<group>"; };
 		1AAE2979242A798000D696E8 /* tomatoes_peppers.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tomatoes_peppers.jpeg; sourceTree = "<group>"; };
 		1AAE297D242A7AC500D696E8 /* grilled_chicken_and_peppers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grilled_chicken_and_peppers.jpg; sourceTree = "<group>"; };
+		1ADF95872432520600FA8ECD /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,13 +150,6 @@
 			path = "View Models";
 			sourceTree = "<group>";
 		};
-		1A13190C2428660700C7133D /* Playgrounds */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Playgrounds;
-			sourceTree = "<group>";
-		};
 		1A363FF024284FC900705673 = {
 			isa = PBXGroup;
 			children = (
@@ -176,8 +173,8 @@
 		1A363FFB24284FC900705673 /* FamilyRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				1ADF9586243251D800FA8ECD /* Services */,
 				1AAE2978242A789C00D696E8 /* Resources */,
-				1A13190C2428660700C7133D /* Playgrounds */,
 				1A1319032428543D00C7133D /* View Models */,
 				1A1319022428542E00C7133D /* Views */,
 				1A1319012428541E00C7133D /* Models */,
@@ -223,8 +220,17 @@
 			children = (
 				1AAE2979242A798000D696E8 /* tomatoes_peppers.jpeg */,
 				1AAE297D242A7AC500D696E8 /* grilled_chicken_and_peppers.jpg */,
+				1A5ACD9024316B4C007401FE /* Recipes.json */,
+				1ADF95872432520600FA8ECD /* FileService.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1ADF9586243251D800FA8ECD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A36400C24284FCC00705673 /* LaunchScreen.storyboard in Resources */,
+				1A5ACD9124316B4C007401FE /* Recipes.json in Resources */,
 				1A36400924284FCC00705673 /* Preview Assets.xcassets in Resources */,
 				1AAE297E242A7AC500D696E8 /* grilled_chicken_and_peppers.jpg in Resources */,
 				1A36400624284FCC00705673 /* Assets.xcassets in Resources */,
@@ -361,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AAE29772429CBDE00D696E8 /* IngredientViewModel.swift in Sources */,
+				1ADF95882432520600FA8ECD /* FileService.swift in Sources */,
 				1A5ACD54242B31A0007401FE /* HeaderView.swift in Sources */,
 				1AAE296F2429B1FC00D696E8 /* DirectionViewModel.swift in Sources */,
 				1AAE296D2429B10100D696E8 /* DirectionView.swift in Sources */,

@@ -5,11 +5,9 @@
 //  Created by Ian Plunkett on 3/22/20.
 //  Copyright © 2020 Ian Plunkett. All rights reserved.
 //
-
 import Foundation
 
-//TODO: Add a servings per recipe
-struct Recipe: Identifiable {
+struct Recipe: Identifiable, Codable {
     let id: UUID
     let name: String
     let prepTime: String
@@ -21,40 +19,15 @@ struct Recipe: Identifiable {
 }
 
 extension Recipe {
+
+    static func toJSON(recipes: [Recipe]) -> String {
+        guard let jsonData = try? JSONEncoder().encode(recipes) else { return "error!" }
+        guard let jsonString = String(data: jsonData, encoding: .utf8) else { return "error!" }
+        return jsonString
+    }
+
     static func all() -> [Recipe] {
-        //TODO: move this data to a JSON Object
-        return [
-            Recipe(
-                id: UUID(),
-                name: "Tomato and Pepper Salsa",
-                prepTime: "10 Minutes",
-                cookTime: "15 Minutes",
-                servings: 4,
-                ingredients: [
-                    IngredientMeasurement(id: UUID(), unit: Unit.DryVolume(.cup), ingredient: Ingredient(id: UUID(), name: "Tomatoes", description: "Roma Tomatoes"), amount: 1),
-                    IngredientMeasurement(id: UUID(), unit: Unit.DryVolume(.cup), ingredient: Ingredient(id: UUID(), name: "Thai Chilis", description: "Ripe Thai Chilis"), amount: 1),
-                    IngredientMeasurement(id: UUID(), unit: Unit.DryVolume(.cup), ingredient: Ingredient(id: UUID(), name: "Yellow Onion", description: "Yellow Onion"), amount: 0.5),
-                    IngredientMeasurement(id: UUID(), unit: Unit.DryVolume(.cup), ingredient: Ingredient(id: UUID(), name: "Salt", description: "Kosher Salt"), amount: 0.5)
-                ],
-                directions: [
-                    Direction(id: UUID(), step: 1, description: "Chop tomatoes into quarter inch chunks"),
-                    Direction(id: UUID(), step: 2, description: "Mince onion"),
-                    Direction(id: UUID(), step: 3, description: "Finely chop peppers"),
-                    Direction(id: UUID(), step: 4, description: "Combine in mixing bowl"),
-                    Direction(id: UUID(), step: 5, description: "Add salt to taste")
-                ],
-                imageName: "tomatoes_peppers"
-            ),
-            Recipe(
-                id: UUID(),
-                name: "Scrambled Eggs",
-                prepTime: "10 Minutes",
-                cookTime: "15 Minutes",
-                servings: 1,
-                ingredients:[IngredientMeasurement(id: UUID(), unit: Unit.DryVolume(.cup), ingredient: Ingredient(id: UUID(), name: "Eggs", description: "Fresh Organic Eggs"), amount: 2)],
-                directions: [Direction(id: UUID(), step: 1, description: "Scramble Eggs and fry in a pan until done")],
-                imageName: "grilled_chicken_and_peppers"
-            )
-        ]
+        let dataService = FileService()
+        return dataService.load("Recipes.json")
     }
 }
