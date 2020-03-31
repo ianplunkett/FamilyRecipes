@@ -34,6 +34,7 @@
 		1AAE297E242A7AC500D696E8 /* grilled_chicken_and_peppers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1AAE297D242A7AC500D696E8 /* grilled_chicken_and_peppers.jpg */; };
 		1ADF95882432520600FA8ECD /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF95872432520600FA8ECD /* FileService.swift */; };
 		1ADF95942432EC6D00FA8ECD /* RecipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF95932432EC6D00FA8ECD /* RecipeTests.swift */; };
+		1ADF95972432EF3800FA8ECD /* FileServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF95962432EF3800FA8ECD /* FileServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		1AAE297D242A7AC500D696E8 /* grilled_chicken_and_peppers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grilled_chicken_and_peppers.jpg; sourceTree = "<group>"; };
 		1ADF95872432520600FA8ECD /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
 		1ADF95932432EC6D00FA8ECD /* RecipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTests.swift; sourceTree = "<group>"; };
+		1ADF95962432EF3800FA8ECD /* FileServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,8 @@
 		1A36401524284FCD00705673 /* FamilyRecipesTests */ = {
 			isa = PBXGroup;
 			children = (
+				1ADF95982432F06200FA8ECD /* Resources */,
+				1ADF95952432EF1000FA8ECD /* Services */,
 				1ADF95922432EBDB00FA8ECD /* Models */,
 				1A36401824284FCD00705673 /* Info.plist */,
 			);
@@ -239,6 +243,21 @@
 				1ADF95932432EC6D00FA8ECD /* RecipeTests.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1ADF95952432EF1000FA8ECD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1ADF95962432EF3800FA8ECD /* FileServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1ADF95982432F06200FA8ECD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ADF95942432EC6D00FA8ECD /* RecipeTests.swift in Sources */,
+				1ADF95972432EF3800FA8ECD /* FileServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -27,7 +27,9 @@ extension Recipe {
     }
 
     static func all() -> [Recipe] {
-        let dataService = FileService()
+        let dataService = FileService(bundle: Bundle.main)
         return dataService.load("Recipes.json")
+
     }
+
 }
