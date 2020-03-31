@@ -11,6 +11,9 @@ import XCTest
 
 class FileServiceTests: XCTestCase {
 
+    let singleRecipe: String = "SingleRecipe.json"
+    let badRecipe: String = "BadRecipe.json"
+
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -19,16 +22,10 @@ class FileServiceTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testLoadModelFromFile() throws {
+        let bundle = Bundle(for: type(of: self))
+        let fileService: FileService = FileService(bundle: bundle)
+        let recipe: Recipe = fileService.load(singleRecipe)
+        XCTAssertTrue(type(of: recipe) == Recipe.self)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

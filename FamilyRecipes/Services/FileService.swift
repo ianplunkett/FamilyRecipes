@@ -16,6 +16,7 @@ class FileService {
     }
 
     func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
+
         let data: Data
 
         guard let file = bundle.url(forResource: filename, withExtension: nil) else {
@@ -33,7 +34,6 @@ class FileService {
             return try decoder.decode(T.self, from: data)
         } catch {
             fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
-
         }
     }
 }
