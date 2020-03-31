@@ -221,7 +221,6 @@
 				1AAE2979242A798000D696E8 /* tomatoes_peppers.jpeg */,
 				1AAE297D242A7AC500D696E8 /* grilled_chicken_and_peppers.jpg */,
 				1A5ACD9024316B4C007401FE /* Recipes.json */,
-				1ADF95872432520600FA8ECD /* FileService.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -229,6 +228,7 @@
 		1ADF9586243251D800FA8ECD /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				1ADF95872432520600FA8ECD /* FileService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
