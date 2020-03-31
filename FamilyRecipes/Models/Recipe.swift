@@ -28,8 +28,13 @@ extension Recipe {
 
     static func all() -> [Recipe] {
         let dataService = FileService(bundle: Bundle.main)
-        return dataService.load("Recipes.json")
-
+        let recipes: [Recipe]
+        do {
+            recipes = try dataService.load("Recipes.json")
+        } catch {
+            recipes = []
+        }
+        return recipes
     }
 
 }

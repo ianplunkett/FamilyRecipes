@@ -24,15 +24,20 @@ class FileServiceTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-/*
+
     func testBadFileName() {
-        let fileService:
-        XCTAssertThrowsError(<#T##expression: T##T#>)
+        var thrownError: Error?
+        XCTAssertThrowsError(try fileService.load(badRecipe) as Recipe) {
+            thrownError = $0
+        }
+
+        XCTAssertTrue(thrownError is FileServiceError, "Error is of type \(FileServiceError.self)")
+
+        XCTAssertEqual(thrownError as? FileServiceError, .invalidFileName)
     }
-*/
 
     func testLoadModelFromFile() throws {
-        let recipe: Recipe = fileService.load(singleRecipe)
+        let recipe: Recipe = try fileService.load(singleRecipe)
         XCTAssertTrue(type(of: recipe) == Recipe.self)
     }
 }
