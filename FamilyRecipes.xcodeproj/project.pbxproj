@@ -19,7 +19,6 @@
 		1A36400624284FCC00705673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A36400524284FCC00705673 /* Assets.xcassets */; };
 		1A36400924284FCC00705673 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A36400824284FCC00705673 /* Preview Assets.xcassets */; };
 		1A36400C24284FCC00705673 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A36400A24284FCC00705673 /* LaunchScreen.storyboard */; };
-		1A36401724284FCD00705673 /* FamilyRecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A36401624284FCD00705673 /* FamilyRecipesTests.swift */; };
 		1A36402224284FCD00705673 /* FamilyRecipesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A36402124284FCD00705673 /* FamilyRecipesUITests.swift */; };
 		1A5ACD54242B31A0007401FE /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FF7BC242AE52600532CB1 /* HeaderView.swift */; };
 		1A5ACD9124316B4C007401FE /* Recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A5ACD9024316B4C007401FE /* Recipes.json */; };
@@ -70,7 +69,6 @@
 		1A36400B24284FCC00705673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A36400D24284FCC00705673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A36401224284FCD00705673 /* FamilyRecipesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamilyRecipesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A36401624284FCD00705673 /* FamilyRecipesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyRecipesTests.swift; sourceTree = "<group>"; };
 		1A36401824284FCD00705673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A36401D24284FCD00705673 /* FamilyRecipesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamilyRecipesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A36402124284FCD00705673 /* FamilyRecipesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyRecipesUITests.swift; sourceTree = "<group>"; };
@@ -203,7 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				1ADF95922432EBDB00FA8ECD /* Models */,
-				1A36401624284FCD00705673 /* FamilyRecipesTests.swift */,
 				1A36401824284FCD00705673 /* Info.plist */,
 			);
 			path = FamilyRecipesTests;
@@ -404,7 +401,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A36401724284FCD00705673 /* FamilyRecipesTests.swift in Sources */,
 				1ADF95942432EC6D00FA8ECD /* RecipeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
