@@ -25,11 +25,6 @@ class FileService {
 
         do {
             data = try Data(contentsOf: file)
-        } catch {
-            throw FileServiceError.fileLoad
-        }
-
-        do {
             let decoder = JSONDecoder()
             return try decoder.decode(T.self, from: data)
         } catch {

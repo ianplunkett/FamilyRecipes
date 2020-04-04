@@ -11,8 +11,10 @@ import XCTest
 
 class FileServiceTests: XCTestCase {
 
-    let singleRecipe: String = "SingleRecipe.json"
-    let badRecipe: String = "BadRecipe.json"
+    let validRecipe: String = "SingleRecipe.json"
+    let invalidFileName: String = "InvalidFileName.json"
+    let invalidFormat: String = "InvalidFormat.json"
+
     var bundle: Bundle!
     var fileService: FileService!
 
@@ -22,12 +24,13 @@ class FileServiceTests: XCTestCase {
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        bundle = nil
+        fileService = nil
     }
 
-    func testBadFileName() {
+    func testInvalidFileName() {
         var thrownError: Error?
-        XCTAssertThrowsError(try fileService.load(badRecipe) as Recipe) {
+        XCTAssertThrowsError(try fileService.load(invalidFileName) as Recipe) {
             thrownError = $0
         }
 
@@ -36,8 +39,19 @@ class FileServiceTests: XCTestCase {
         XCTAssertEqual(thrownError as? FileServiceError, .invalidFileName)
     }
 
+    func testFileParse() {
+        var thrownError: Error?
+        XCTAssertThrowsError(try fileService.load(invalidFormat) as Recipe) {
+            thrownError = $0
+        }
+
+        XCTAssertTrue(thrownError is FileServiceError, "Error is of type \(FileServiceError.self)")
+
+        XCTAssertEqual(thrownError as? FileServiceError, .fileParse)
+    }
+
     func testLoadModelFromFile() throws {
-        let recipe: Recipe = try fileService.load(singleRecipe)
+        let recipe: Recipe = try fileService.load(validRecipe)
         XCTAssertTrue(type(of: recipe) == Recipe.self)
     }
 }

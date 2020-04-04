@@ -1,0 +1,89 @@
+
+  "name": "Tomato and Pepper Salsa",
+  "imageName": "tomatoes_peppers",
+  "ingredients": [
+    {
+      "amount": 1,
+      "id": "F79BCEC5-7FF1-45C9-ACD9-0FE5223A3B62",
+      "ingredient": {
+        "id": "664589D5-A0D5-463D-8D02-F23911D4B2EC",
+        "name": "Tomatoes",
+        "description": "Roma Tomatoes"
+      },
+      "unit": {
+        "id": "76DE4311-D7C9-4E70-9A17-F417A04391C9",
+        "name": "cup"
+      }
+    },
+    {
+      "amount": 1,
+      "id": "53FF9BD1-34AC-4622-A8A7-DBAD76525359",
+      "ingredient": {
+        "id": "AE0F0605-C33F-4DC4-BB76-3DB493D941B4",
+        "name": "Thai Chilis",
+        "description": "Ripe Thai Chilis"
+      },
+      "unit": {
+        "id": "AA24750A-0D18-45F4-A168-83012E0190AE",
+        "name": "cup"
+      }
+    },
+    {
+      "amount": 0.5,
+      "id": "890C5B33-6295-4680-A581-71C63DDC2A6C",
+      "ingredient": {
+        "id": "C273A802-4735-4FF0-8287-2831FC404346",
+        "name": "Yellow Onion",
+        "description": "Yellow Onion"
+      },
+      "unit": {
+        "id": "52EBA978-17E9-46FE-9FBC-93D4EE0B4A18",
+        "name": "cup"
+      }
+    },
+    {
+      "amount": 0.5,
+      "id": "A4FF4445-69C0-4DFC-A2C8-442093C9D36C",
+      "ingredient": {
+        "id": "65623669-9308-4BDF-9E7F-D17B50DB24EB",
+        "name": "Salt",
+        "description": "Kosher Salt"
+      },
+      "unit": {
+        "id": "97A43C4F-346B-460A-8D7E-B69AF6442650",
+        "name": "cup"
+      }
+    }
+  ],
+  "id": "1BA47AFB-D3E0-4456-8B0F-078856C2FC73",
+  "prepTime": "10 Minutes",
+  "cookTime": "15 Minutes",
+  "servings": 4,
+  "directions": [
+    {
+      "id": "811DE6A8-1733-4744-90B8-5E3DD66CC3A6",
+      "step": 1,
+      "description": "Chop tomatoes into quarter inch chunks"
+    },
+    {
+      "id": "954DB333-D111-428E-90ED-6BFCCD633319",
+      "step": 2,
+      "description": "Mince onion"
+    },
+    {
+      "id": "88792B09-5EC1-41B5-A5F3-AB4D27BF866F",
+      "step": 3,
+      "description": "Finely chop peppers"
+    },
+    {
+      "id": "EF21812A-62D6-4BA5-8F9C-5AC2F4B5B675",
+      "step": 4,
+      "description": "Combine in mixing bowl"
+    },
+    {
+      "id": "5C92A0E7-9A1D-4606-B3CD-264E02F04A53",
+      "step": 5,
+      "description": "Add salt to taste"
+    }
+  ]
+}
