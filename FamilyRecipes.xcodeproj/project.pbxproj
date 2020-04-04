@@ -36,6 +36,7 @@
 		1ADF95942432EC6D00FA8ECD /* RecipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF95932432EC6D00FA8ECD /* RecipeTests.swift */; };
 		1ADF95972432EF3800FA8ECD /* FileServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF95962432EF3800FA8ECD /* FileServiceTests.swift */; };
 		1ADF959A2432F79400FA8ECD /* SingleRecipe.json in Resources */ = {isa = PBXBuildFile; fileRef = 1ADF95992432F79400FA8ECD /* SingleRecipe.json */; };
+		1ADF959C243398A000FA8ECD /* InvalidFormat.json in Resources */ = {isa = PBXBuildFile; fileRef = 1ADF959B243398A000FA8ECD /* InvalidFormat.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		1ADF95932432EC6D00FA8ECD /* RecipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTests.swift; sourceTree = "<group>"; };
 		1ADF95962432EF3800FA8ECD /* FileServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServiceTests.swift; sourceTree = "<group>"; };
 		1ADF95992432F79400FA8ECD /* SingleRecipe.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SingleRecipe.json; sourceTree = "<group>"; };
+		1ADF959B243398A000FA8ECD /* InvalidFormat.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = InvalidFormat.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				1ADF95992432F79400FA8ECD /* SingleRecipe.json */,
+				1ADF959B243398A000FA8ECD /* InvalidFormat.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ADF959C243398A000FA8ECD /* InvalidFormat.json in Resources */,
 				1ADF959A2432F79400FA8ECD /* SingleRecipe.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
