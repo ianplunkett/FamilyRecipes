@@ -34,6 +34,7 @@
 		1AAE297E242A7AC500D696E8 /* grilled_chicken_and_peppers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1AAE297D242A7AC500D696E8 /* grilled_chicken_and_peppers.jpg */; };
 		1ACC006024394FC4000B03E9 /* DataServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC005F24394FC4000B03E9 /* DataServiceProtocol.swift */; };
 		1ACC00632439B30A000B03E9 /* RecipeListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC00622439B30A000B03E9 /* RecipeListViewModelTests.swift */; };
+		1ACC00662439C19C000B03E9 /* DataServiceProtocolMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC00652439C19C000B03E9 /* DataServiceProtocolMocks.swift */; };
 		1ADF95882432520600FA8ECD /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF95872432520600FA8ECD /* FileService.swift */; };
 		1ADF95972432EF3800FA8ECD /* FileServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF95962432EF3800FA8ECD /* FileServiceTests.swift */; };
 		1ADF959A2432F79400FA8ECD /* SingleRecipe.json in Resources */ = {isa = PBXBuildFile; fileRef = 1ADF95992432F79400FA8ECD /* SingleRecipe.json */; };
@@ -91,6 +92,7 @@
 		1AAE297D242A7AC500D696E8 /* grilled_chicken_and_peppers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grilled_chicken_and_peppers.jpg; sourceTree = "<group>"; };
 		1ACC005F24394FC4000B03E9 /* DataServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServiceProtocol.swift; sourceTree = "<group>"; };
 		1ACC00622439B30A000B03E9 /* RecipeListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewModelTests.swift; sourceTree = "<group>"; };
+		1ACC00652439C19C000B03E9 /* DataServiceProtocolMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServiceProtocolMocks.swift; sourceTree = "<group>"; };
 		1ADF95872432520600FA8ECD /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
 		1ADF95962432EF3800FA8ECD /* FileServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServiceTests.swift; sourceTree = "<group>"; };
 		1ADF95992432F79400FA8ECD /* SingleRecipe.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SingleRecipe.json; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 		1A36401524284FCD00705673 /* FamilyRecipesTests */ = {
 			isa = PBXGroup;
 			children = (
+				1ACC00642439C172000B03E9 /* Mocks */,
 				1ACC00612439B2D6000B03E9 /* View Models */,
 				1ADF95982432F06200FA8ECD /* Resources */,
 				1ADF95952432EF1000FA8ECD /* Services */,
@@ -242,6 +245,14 @@
 				1ACC00622439B30A000B03E9 /* RecipeListViewModelTests.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		1ACC00642439C172000B03E9 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				1ACC00652439C19C000B03E9 /* DataServiceProtocolMocks.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		1ADF9586243251D800FA8ECD /* Services */ = {
@@ -442,6 +453,7 @@
 			files = (
 				1ACC00632439B30A000B03E9 /* RecipeListViewModelTests.swift in Sources */,
 				1ADF95972432EF3800FA8ECD /* FileServiceTests.swift in Sources */,
+				1ACC00662439C19C000B03E9 /* DataServiceProtocolMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
