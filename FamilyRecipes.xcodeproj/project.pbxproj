@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -37,6 +37,7 @@
 		1ACC00662439C19C000B03E9 /* DataServiceProtocolMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC00652439C19C000B03E9 /* DataServiceProtocolMocks.swift */; };
 		1ACC00682439C269000B03E9 /* DirectionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC00672439C269000B03E9 /* DirectionViewModelTests.swift */; };
 		1ACC006A243A3E17000B03E9 /* IngredientViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC0069243A3E17000B03E9 /* IngredientViewModelTests.swift */; };
+		1ACC006D243A5AD6000B03E9 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 1ACC006C243A5AD6000B03E9 /* ViewInspector */; };
 		1ADF95882432520600FA8ECD /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF95872432520600FA8ECD /* FileService.swift */; };
 		1ADF95972432EF3800FA8ECD /* FileServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF95962432EF3800FA8ECD /* FileServiceTests.swift */; };
 		1ADF959A2432F79400FA8ECD /* SingleRecipe.json in Resources */ = {isa = PBXBuildFile; fileRef = 1ADF95992432F79400FA8ECD /* SingleRecipe.json */; };
@@ -115,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ACC006D243A5AD6000B03E9 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +330,9 @@
 				1A36401424284FCD00705673 /* PBXTargetDependency */,
 			);
 			name = FamilyRecipesTests;
+			packageProductDependencies = (
+				1ACC006C243A5AD6000B03E9 /* ViewInspector */,
+			);
 			productName = FamilyRecipesTests;
 			productReference = 1A36401224284FCD00705673 /* FamilyRecipesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -382,6 +387,9 @@
 				Base,
 			);
 			mainGroup = 1A363FF024284FC900705673;
+			packageReferences = (
+				1ACC006B243A5AD6000B03E9 /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			productRefGroup = 1A363FFA24284FC900705673 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -778,6 +786,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1ACC006B243A5AD6000B03E9 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.10;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1ACC006C243A5AD6000B03E9 /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ACC006B243A5AD6000B03E9 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		1A36400024284FC900705673 /* FamilyRecipes.xcdatamodeld */ = {
