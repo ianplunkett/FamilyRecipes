@@ -15,7 +15,7 @@ struct RecipeView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                HeaderView(imageName: recipe.imageName, recipeName: recipe.name)
+                HeaderView(imageName: recipe.imageName)
                 Text(recipe.prepTime)
                     .fontWeight(.bold)
                 Text(recipe.cookTime)

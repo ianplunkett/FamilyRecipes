@@ -38,6 +38,7 @@
 		1ACC00682439C269000B03E9 /* DirectionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC00672439C269000B03E9 /* DirectionViewModelTests.swift */; };
 		1ACC006A243A3E17000B03E9 /* IngredientViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC0069243A3E17000B03E9 /* IngredientViewModelTests.swift */; };
 		1ACC006D243A5AD6000B03E9 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 1ACC006C243A5AD6000B03E9 /* ViewInspector */; };
+		1ACC0070243A5B76000B03E9 /* HeaderViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC006F243A5B76000B03E9 /* HeaderViewTests.swift */; };
 		1ADF95882432520600FA8ECD /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF95872432520600FA8ECD /* FileService.swift */; };
 		1ADF95972432EF3800FA8ECD /* FileServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF95962432EF3800FA8ECD /* FileServiceTests.swift */; };
 		1ADF959A2432F79400FA8ECD /* SingleRecipe.json in Resources */ = {isa = PBXBuildFile; fileRef = 1ADF95992432F79400FA8ECD /* SingleRecipe.json */; };
@@ -98,6 +99,7 @@
 		1ACC00652439C19C000B03E9 /* DataServiceProtocolMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServiceProtocolMocks.swift; sourceTree = "<group>"; };
 		1ACC00672439C269000B03E9 /* DirectionViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionViewModelTests.swift; sourceTree = "<group>"; };
 		1ACC0069243A3E17000B03E9 /* IngredientViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewModelTests.swift; sourceTree = "<group>"; };
+		1ACC006F243A5B76000B03E9 /* HeaderViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewTests.swift; sourceTree = "<group>"; };
 		1ADF95872432520600FA8ECD /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
 		1ADF95962432EF3800FA8ECD /* FileServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServiceTests.swift; sourceTree = "<group>"; };
 		1ADF95992432F79400FA8ECD /* SingleRecipe.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SingleRecipe.json; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 		1A36401524284FCD00705673 /* FamilyRecipesTests */ = {
 			isa = PBXGroup;
 			children = (
+				1ACC006E243A5B59000B03E9 /* Views */,
 				1ACC00642439C172000B03E9 /* Mocks */,
 				1ACC00612439B2D6000B03E9 /* View Models */,
 				1ADF95982432F06200FA8ECD /* Resources */,
@@ -261,6 +264,14 @@
 				1ACC00652439C19C000B03E9 /* DataServiceProtocolMocks.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		1ACC006E243A5B59000B03E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1ACC006F243A5B76000B03E9 /* HeaderViewTests.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		1ADF9586243251D800FA8ECD /* Services */ = {
@@ -466,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ACC00682439C269000B03E9 /* DirectionViewModelTests.swift in Sources */,
+				1ACC0070243A5B76000B03E9 /* HeaderViewTests.swift in Sources */,
 				1ACC006A243A3E17000B03E9 /* IngredientViewModelTests.swift in Sources */,
 				1ACC00632439B30A000B03E9 /* RecipeListViewModelTests.swift in Sources */,
 				1ADF95972432EF3800FA8ECD /* FileServiceTests.swift in Sources */,

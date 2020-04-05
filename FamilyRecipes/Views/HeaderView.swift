@@ -10,8 +10,7 @@ import SwiftUI
 
 struct HeaderView: View {
     var imageName: String
-    var recipeName: String
-    
+
     var body: some View {
         VStack(alignment: .leading) {
             Image(imageName)
@@ -24,6 +23,6 @@ struct HeaderView: View {
 
 struct HeaderImageView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderView(imageName: "tomatoes_peppers", recipeName: "Tomato and Pepper Salsa")
+        HeaderView(imageName: "tomatoes_peppers")
     }
 }
