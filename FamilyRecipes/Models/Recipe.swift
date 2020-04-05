@@ -17,24 +17,3 @@ struct Recipe: Identifiable, Codable {
     let directions: [Direction]
     let imageName: String
 }
-
-extension Recipe {
-
-    static func toJSON(recipes: [Recipe]) -> String {
-        guard let jsonData = try? JSONEncoder().encode(recipes) else { return "error!" }
-        guard let jsonString = String(data: jsonData, encoding: .utf8) else { return "error!" }
-        return jsonString
-    }
-
-    static func all() -> [Recipe] {
-        let dataService = FileService(bundle: Bundle.main)
-        let recipes: [Recipe]
-        do {
-            recipes = try dataService.load("Recipes.json")
-        } catch {
-            recipes = []
-        }
-        return recipes
-    }
-
-}

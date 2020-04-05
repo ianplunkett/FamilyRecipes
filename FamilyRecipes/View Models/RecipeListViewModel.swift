@@ -8,12 +8,28 @@
 
 import Foundation
 
-class RecipesListViewModel: ObservableObject {
-    //TODO: I don't think we need this here yet. No state changes
-    @Published var recipes = [RecipeViewModel]()
+class RecipeListViewModel {
+
+    let recipeService: DataServiceProtocol
+
+    var recipes = [RecipeViewModel]()
+
     
-    init() {
-        let recipes: [Recipe] = Recipe.all()
+    init(recipeService: DataServiceProtocol = FileService(bundle: Bundle.main)) {
+        self.recipeService = recipeService
+        fetchRecipes(recipesJson: "Recipes.json")
+    }
+
+    func fetchRecipes(recipesJson: String) {
+
+        let dataService = recipeService
+        let recipes: [Recipe]
+        
+        do {
+            recipes = try dataService.load(recipesJson, as: [Recipe].self)
+        } catch {
+            recipes = []
+        }
         self.recipes = recipes.map(RecipeViewModel.init)
     }
 }
@@ -40,7 +56,7 @@ class RecipeViewModel {
     }
 
     var cookTime: String {
-        return "Cook TIme: " + self.recipe.cookTime
+        return "Cook Time: " + self.recipe.cookTime
     }
 
     var servings: String {

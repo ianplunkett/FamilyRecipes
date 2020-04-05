@@ -7,13 +7,11 @@
 //
 import Foundation
 
-class FileService {
-
+struct FileService {
     let bundle: Bundle
+}
 
-    init(bundle: Bundle) {
-        self.bundle = bundle
-    }
+extension FileService: DataServiceProtocol {
 
     func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) throws -> T {
 
@@ -31,6 +29,14 @@ class FileService {
             throw FileServiceError.fileParse
         }
     }
+    
+/*
+    func toJSON(recipes: [Recipe]) -> String {
+        guard let jsonData = try? JSONEncoder().encode(recipes) else { return "error!" }
+        guard let jsonString = String(data: jsonData, encoding: .utf8) else { return "error!" }
+        return jsonString
+    }
+ */
 }
 
 enum FileServiceError: Error {

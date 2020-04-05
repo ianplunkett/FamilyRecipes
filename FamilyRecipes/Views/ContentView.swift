@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject private var recipeListVM = RecipesListViewModel()
+    var recipeListVM = RecipeListViewModel()
     
     var body: some View {
         RecipeListView(recipes: self.recipeListVM.recipes)
