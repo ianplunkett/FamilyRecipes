@@ -14,7 +14,7 @@ struct DirectionView: View {
 
     var body: some View {
         HStack(alignment: .top) {
-            Text("Step " + String(direction.step) + ".")
+            Text(direction.step)
             Text(direction.description)
         }
     }

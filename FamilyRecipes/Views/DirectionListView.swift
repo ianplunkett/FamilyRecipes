@@ -28,7 +28,6 @@ struct DirectionListView: View {
 
 struct DirectionListView_Previews: PreviewProvider {
     static var previews: some View {
-        //TODO: This is messy and not resuable. Pull this from JSON that can also be used for tests
         DirectionListView(directions:
             [DirectionViewModel(direction: Direction(id: UUID(), step: 1, description: "Boiling Pasta for 5 minutes or until done"))])
     }

@@ -17,8 +17,8 @@ class DirectionViewModel {
         self.direction = direction
     }
     
-    var step: Int {
-        return self.direction.step
+    var step: String {
+        return "Step " + String(self.direction.step) + "."
     }
     
     var description: String {

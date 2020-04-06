@@ -26,3 +26,4 @@ struct HeaderImageView_Previews: PreviewProvider {
         HeaderView(imageName: "tomatoes_peppers")
     }
 }
+
