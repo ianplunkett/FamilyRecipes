@@ -28,7 +28,7 @@ class DirectionViewModelTests: XCTestCase {
     }
 
     func testStep() throws {
-        XCTAssertEqual(1, directionViewModel.step)
+        XCTAssertEqual("Step 1.", directionViewModel.step)
     }
 
 

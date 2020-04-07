@@ -39,6 +39,10 @@
 		1ACC006A243A3E17000B03E9 /* IngredientViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC0069243A3E17000B03E9 /* IngredientViewModelTests.swift */; };
 		1ACC006D243A5AD6000B03E9 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 1ACC006C243A5AD6000B03E9 /* ViewInspector */; };
 		1ACC0070243A5B76000B03E9 /* HeaderViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC006F243A5B76000B03E9 /* HeaderViewTests.swift */; };
+		1ACC0072243A768F000B03E9 /* RecipeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC0071243A768F000B03E9 /* RecipeViewTests.swift */; };
+		1ACC0074243A7D0C000B03E9 /* DirectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC0073243A7D0C000B03E9 /* DirectionViewTests.swift */; };
+		1ACC0076243AA94E000B03E9 /* IngredientListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC0075243AA94E000B03E9 /* IngredientListViewTests.swift */; };
+		1ACC0078243AC5BB000B03E9 /* DirectionListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC0077243AC5BB000B03E9 /* DirectionListViewTests.swift */; };
 		1ADF95882432520600FA8ECD /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF95872432520600FA8ECD /* FileService.swift */; };
 		1ADF95972432EF3800FA8ECD /* FileServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF95962432EF3800FA8ECD /* FileServiceTests.swift */; };
 		1ADF959A2432F79400FA8ECD /* SingleRecipe.json in Resources */ = {isa = PBXBuildFile; fileRef = 1ADF95992432F79400FA8ECD /* SingleRecipe.json */; };
@@ -100,6 +104,10 @@
 		1ACC00672439C269000B03E9 /* DirectionViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionViewModelTests.swift; sourceTree = "<group>"; };
 		1ACC0069243A3E17000B03E9 /* IngredientViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewModelTests.swift; sourceTree = "<group>"; };
 		1ACC006F243A5B76000B03E9 /* HeaderViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewTests.swift; sourceTree = "<group>"; };
+		1ACC0071243A768F000B03E9 /* RecipeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewTests.swift; sourceTree = "<group>"; };
+		1ACC0073243A7D0C000B03E9 /* DirectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionViewTests.swift; sourceTree = "<group>"; };
+		1ACC0075243AA94E000B03E9 /* IngredientListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientListViewTests.swift; sourceTree = "<group>"; };
+		1ACC0077243AC5BB000B03E9 /* DirectionListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionListViewTests.swift; sourceTree = "<group>"; };
 		1ADF95872432520600FA8ECD /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
 		1ADF95962432EF3800FA8ECD /* FileServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServiceTests.swift; sourceTree = "<group>"; };
 		1ADF95992432F79400FA8ECD /* SingleRecipe.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SingleRecipe.json; sourceTree = "<group>"; };
@@ -270,6 +278,10 @@
 			isa = PBXGroup;
 			children = (
 				1ACC006F243A5B76000B03E9 /* HeaderViewTests.swift */,
+				1ACC0075243AA94E000B03E9 /* IngredientListViewTests.swift */,
+				1ACC0073243A7D0C000B03E9 /* DirectionViewTests.swift */,
+				1ACC0071243A768F000B03E9 /* RecipeViewTests.swift */,
+				1ACC0077243AC5BB000B03E9 /* DirectionListViewTests.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -478,8 +490,12 @@
 			files = (
 				1ACC00682439C269000B03E9 /* DirectionViewModelTests.swift in Sources */,
 				1ACC0070243A5B76000B03E9 /* HeaderViewTests.swift in Sources */,
+				1ACC0074243A7D0C000B03E9 /* DirectionViewTests.swift in Sources */,
+				1ACC0076243AA94E000B03E9 /* IngredientListViewTests.swift in Sources */,
+				1ACC0078243AC5BB000B03E9 /* DirectionListViewTests.swift in Sources */,
 				1ACC006A243A3E17000B03E9 /* IngredientViewModelTests.swift in Sources */,
 				1ACC00632439B30A000B03E9 /* RecipeListViewModelTests.swift in Sources */,
+				1ACC0072243A768F000B03E9 /* RecipeViewTests.swift in Sources */,
 				1ADF95972432EF3800FA8ECD /* FileServiceTests.swift in Sources */,
 				1ACC00662439C19C000B03E9 /* DataServiceProtocolMocks.swift in Sources */,
 			);
