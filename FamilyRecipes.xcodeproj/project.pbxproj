@@ -39,6 +39,7 @@
 		1ACC006A243A3E17000B03E9 /* IngredientViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC0069243A3E17000B03E9 /* IngredientViewModelTests.swift */; };
 		1ACC006D243A5AD6000B03E9 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 1ACC006C243A5AD6000B03E9 /* ViewInspector */; };
 		1ACC0070243A5B76000B03E9 /* HeaderViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC006F243A5B76000B03E9 /* HeaderViewTests.swift */; };
+		1ACC007A243AE958000B03E9 /* AddRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC0079243AE958000B03E9 /* AddRecipeView.swift */; };
 		1ADF95882432520600FA8ECD /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF95872432520600FA8ECD /* FileService.swift */; };
 		1ADF95972432EF3800FA8ECD /* FileServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF95962432EF3800FA8ECD /* FileServiceTests.swift */; };
 		1ADF959A2432F79400FA8ECD /* SingleRecipe.json in Resources */ = {isa = PBXBuildFile; fileRef = 1ADF95992432F79400FA8ECD /* SingleRecipe.json */; };
@@ -100,6 +101,7 @@
 		1ACC00672439C269000B03E9 /* DirectionViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionViewModelTests.swift; sourceTree = "<group>"; };
 		1ACC0069243A3E17000B03E9 /* IngredientViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewModelTests.swift; sourceTree = "<group>"; };
 		1ACC006F243A5B76000B03E9 /* HeaderViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewTests.swift; sourceTree = "<group>"; };
+		1ACC0079243AE958000B03E9 /* AddRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeView.swift; sourceTree = "<group>"; };
 		1ADF95872432520600FA8ECD /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
 		1ADF95962432EF3800FA8ECD /* FileServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServiceTests.swift; sourceTree = "<group>"; };
 		1ADF95992432F79400FA8ECD /* SingleRecipe.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SingleRecipe.json; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				1AAE296C2429B10100D696E8 /* DirectionView.swift */,
 				1AAE29632429345300D696E8 /* RecipeListView.swift */,
 				1A7FF7BC242AE52600532CB1 /* HeaderView.swift */,
+				1ACC0079243AE958000B03E9 /* AddRecipeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				1AAE29642429345300D696E8 /* RecipeListView.swift in Sources */,
 				1AAE2962242874E100D696E8 /* RecipeView.swift in Sources */,
 				1A1319072428562300C7133D /* Ingredient.swift in Sources */,
+				1ACC007A243AE958000B03E9 /* AddRecipeView.swift in Sources */,
 				1A36400424284FC900705673 /* ContentView.swift in Sources */,
 				1AAE2967242942E000D696E8 /* RecipeListViewModel.swift in Sources */,
 				1A13190B2428595900C7133D /* Unit.swift in Sources */,

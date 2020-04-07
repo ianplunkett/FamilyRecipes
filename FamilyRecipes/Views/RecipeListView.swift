@@ -11,6 +11,8 @@ import SwiftUI
 struct RecipeListView: View {
     
     let recipes: [RecipeViewModel]
+
+    @State private var showModal: Bool = false
     
     init(recipes: [RecipeViewModel]) {
         self.recipes = recipes
@@ -33,14 +35,24 @@ struct RecipeListView: View {
             }
             .navigationBarTitle(Text("Recipes"), displayMode: .large)
                 //TODO: Add a Create Recipe View and link it here
-            .navigationBarItems(trailing:
-                Button(action: showAddRecipeView) {
-                    Image(systemName: "plus")
-            })
+                .navigationBarItems(trailing:
+                    Button(action: showAddRecipeView) {
+                        Image(systemName: "plus")
+                            .frame(width: 65, height: 65)
+                    }
+                    .background(Color.yellow)
+            )
+
+                .sheet(isPresented: self.$showModal) {
+                    AddRecipeView(isPresented: self.$showModal)
+            }
         }
     }
     
-    private func showAddRecipeView() {}
+    private func showAddRecipeView() {
+        print("click click")
+        self.showModal = true
+    }
 }
 
 struct RecipeListView_Previews: PreviewProvider {
